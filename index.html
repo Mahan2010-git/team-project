@@ -1,1 +1,24 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>جمع دو عدد</title>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="عدد اول">
+    <input type="number" id="num2" placeholder="عدد دوم">
+    <button onclick="showSum()">جمع</button>
+    <input type="text" id="result" placeholder="نتیجه" readonly>
+
+    <script>
+        function jam(a, b) {
+            return a + b;
+        }
+
+        function showSum() {
+            let a = Number(document.getElementById('num1').value);
+            let b = Number(document.getElementById('num2').value);
+            document.getElementById('result').value = jam(a, b);
+        }
+    </script>
+</body>
+</html>
